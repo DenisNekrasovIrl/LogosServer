@@ -1,5 +1,5 @@
 const express = require("express");
-const cors = require("vercel-cors");
+const cors = require("cors");
 const path = require("path");
 const fileUpload = require("express-fileupload");
 const userRouter = require("./router/user.router");
