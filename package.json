@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "19.x"
+  },
   "scripts": {
     "start": "node index.js",
     "watch": "nodemon index.js"
@@ -14,6 +17,7 @@
     "nodemon": "^2.0.20"
   },
   "dependencies": {
+    "@vercel/node": "^2.8.11",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "express-fileupload": "^1.4.0",
