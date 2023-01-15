@@ -9,12 +9,7 @@ const ordersRouter = require("./router/orders.router");
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-app.use(
-  cors({
-    origin: "*",
-    methods: ["GET", "POST", "PUT", "PATCH", "UPDATE", "DELETE"],
-  })
-);
+app.use(cors());
 app.use(express.json());
 app.use(fileUpload({}));
 app.use(express.static(path.resolve(__dirname, "static")));
