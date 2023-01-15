@@ -10,7 +10,8 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 app.use(cors({
-    origin: "*"
+    origin: "*",
+    methods: "GET, POST, PUT, DELETE"
 }));
 app.use(express.json());
 app.use(fileUpload({}));
